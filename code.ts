@@ -1,11 +1,9 @@
 const fixes = {};
 
-console.log("!!");
-
-const fillStyleId = figma.currentPage.selection[0]["fillStyleId"];
-fillStyleId && console.log("fillStyleId", fillStyleId);
-const strokeStyleId = figma.currentPage.selection[0]["strokeStyleId"];
-strokeStyleId && console.log("strokeStyleId", strokeStyleId);
+// const fillStyleId = figma.currentPage.selection[0]["fillStyleId"];
+// fillStyleId && console.log("fillStyleId", fillStyleId);
+// const strokeStyleId = figma.currentPage.selection[0]["strokeStyleId"];
+// strokeStyleId && console.log("strokeStyleId", strokeStyleId);
 // figma.currentPage.selection[0]["fills"] = [];
 // figma.currentPage.selection[0]["fillStyleId"] = null;
 
@@ -40,7 +38,7 @@ const brokenToWorkingStyleId = {
     "fe3bfda22784624ebc72547c3e526d0e1ca315cb",
   "18a985f4b1101e073271d5fa03ac4d2f539d0ccd":
     "5ec24d05c4efa98ac2ff9cdee6857b7f0405063e",
-  "981900c8eb2f7c54311731d4413455017d45d462":
+  "19e831bbabd583dcc6206cf96d65c51327456336":
     "fd656735b86b49267988cc53ad10827d9a47b7bb",
   "6523715b284e8f1d83aebadc7c8ce59bcf2137e2":
     "ab6827d4e2d7c06ab4dae4b1876bdb139fa85100",
@@ -54,6 +52,8 @@ const brokenToWorkingStyleId = {
     "af57bb2d5eed62a3aa8c01282b23dd814de8c3d0",
   bb5f389cdc643ec9627e10bac1ea558a9eed9403:
     "1992330df46952f14e71cb15785a62976f8d89e2",
+  "981900c8eb2f7c54311731d4413455017d45d462":
+    "4c7db22717863ce7c68189d75ba54f18723c0481",
   "319dd5cf2a088cb8319f4a574b7a7ebab09cb14c":
     "7e82cefd2a139615513b5cb9899663a2f26a4e7c",
   "3f97bc09911e343e57c30f2c9838f8f4bedb9c06":
@@ -120,5 +120,3 @@ async function applyFixes() {
 }
 
 applyFixes();
-
-// figma.closePlugin();

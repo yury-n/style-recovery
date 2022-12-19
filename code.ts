@@ -1,5 +1,7 @@
 const fixes = {};
 
+console.log("!!");
+
 const fillStyleId = figma.currentPage.selection[0]["fillStyleId"];
 fillStyleId && console.log("fillStyleId", fillStyleId);
 const strokeStyleId = figma.currentPage.selection[0]["strokeStyleId"];
@@ -18,7 +20,7 @@ strokeStyleId && console.log("strokeStyleId", strokeStyleId);
 // 4c7db22717863ce7c68189d75ba54f18723c0481
 
 // figma
-//   .importStyleByKeyAsync("4c7db22717863ce7c68189d75ba54f18723c0481")
+//   .importStyleByKeyAsync("af57bb2d5eed62a3aa8c01282b23dd814de8c3d0")
 //   .then((style) => {
 //     figma.currentPage.selection[0]["fillStyleId"] = style.id;
 //     console.log("done");
